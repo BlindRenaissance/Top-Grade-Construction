@@ -1,13 +1,14 @@
-<div id="topNav" class="sqs-announcement-bar-dropzone">
-  <nav class="main-nav dropdown-hover desktop-nav"><ul data-content-field="navigation">
-    {.repeated section items}
+<div id="topNav">
+<nav class="main-nav mobile-nav"><ul data-content-field="navigation-mobileNav">
+  {.repeated section items}
+
 
       <li class="{.section collection}{typeLabel}-collection{.end}{.section active} active-link{.end}{.if collection.folder} folder{.end}{.if folderActive} active-link active-folder{.end}{.section externalLink} external-link{.end}" id="{.section collection}{id}{.end}{.section externalLink}{title|slugify}{.end}">
 
         {.folder?}
 
-          <a>{collection.navigationTitle}</a>
-          <div class="notch"></div>
+          <input type="checkbox" name="mobile-folder-toggle-{collection.id}" id="mobile-folder-toggle-{collection.id}" class="folder-toggle-box hidden" />
+          <label for="mobile-folder-toggle-{collection.id}" class="folder-toggle-label" onclick data-href="{collection.fullUrl}">{collection.navigationTitle}</label>
           <div class="subnav">
             <ul>
               {.repeated section items}
@@ -40,11 +41,8 @@
 
       </li>
 
-    {.end}
 
-    {.section items}<li id="mobileMenuLink"><a>Menu</a></li>{.end}
-
-  </ul>
-  </nav>
-  
+  {.end}
+</ul>
+</nav>
 </div>

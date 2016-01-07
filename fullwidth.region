@@ -1,5 +1,5 @@
 <div id="wrapper">
-	<section id="page" role="main" data-content-field="main-content" data-collection-id="{collection.id}" data-edit-main-image="Page Banner">
+  <section id="page" role="main" data-content-field="main-content" data-collection-id="{collection.id}" data-edit-main-image="Page Banner">
     {.section collection}
       <header class="page-title" data-collection-id="{id}"><h1>{title}</h1></header>
       <div class="page-description" data-collection-id="{id}">{description}</div>
@@ -22,8 +22,4 @@
     {.end}{.end}{.end}
     {squarespace.main-content}
   </section>
-  <aside id="sidebar">
-    <squarespace:block-field id="sidebarBlocks" label="Sidebar Content" />
-  </aside>
 </div>
-
