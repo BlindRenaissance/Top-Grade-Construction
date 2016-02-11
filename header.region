@@ -33,7 +33,7 @@
     <div id="logo" data-content-field="site-title">
       <div class="wrapper">
         {.section website}
-        <h1 class="logo"><div>{.if logoImageUrl}<img src="{logoImageUrl}?format=750w" alt="{siteTitle}" />{.or}{siteTitle}{.end}</div></h1>
+        <h1 class="logo"><img src="{logoImageUrl}?format=750w" alt="{siteTitle}"></h1>
         {.section siteTagLine}<div class="logo-subtitle">{@}</div>{.end}
         {.end}
 
