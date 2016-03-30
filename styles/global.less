@@ -65,12 +65,12 @@ footer {
 #bannerImage.default-background { .banner-image; background-color: @bannerBackground; }
 .banner-overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: @bannerOverlayColor; }
 
-#header { position: relative; z-index: 11; }
+#header { position: relative; }
 .navigation-position-fixed {
   #header #topNav { position: fixed; top: 0; left: 0; width: 100%; z-index: 20; }
-  #logo { margin-top: @nav-font-font-size + @navPadding; z-index: 2; }
+  #logo { margin-top: @nav-font-font-size + @navPadding; }
 }
-#logo { z-index: 2; margin: 0 auto; width: @siteWidth;
+#logo { margin: 0 auto; width: @siteWidth;
   > .wrapper { padding: @bannerPaddingT @bannerPaddingLR @bannerPaddingB; text-align: center; }
 }
 
@@ -110,7 +110,7 @@ footer {
 }
 .logo-image {
   .logo { line-height: 0; margin: 0; height: @logoSize; }
-  .logo img { max-height: 100%; max-width: 100%; z-index: 2; }
+  .logo img { max-height: 100%; max-width: 100%; }
 }
 .logo-subtitle { margin-top: @taglinePaddingTop; }
 
