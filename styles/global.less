@@ -65,9 +65,9 @@ footer {
 #bannerImage.default-background { .banner-image; background-color: @bannerBackground; }
 .banner-overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: @bannerOverlayColor; }
 
-#header { position: relative; }
+#header { position: relative; z-index: 11; }
 .navigation-position-fixed {
-  #header #topNav { position: fixed; top: 0; left: 0; width: 100%; z-index: 20; }
+  #header #topNav { position: fixed; top: 0; left: 0; width: 100%; }
   #logo { margin-top: @nav-font-font-size + @navPadding; }
 }
 #logo { margin: 0 auto; width: @siteWidth;
@@ -75,10 +75,10 @@ footer {
 }
 
 
-#canvas { width: @siteWidth; margin: 0 auto; position: relative; z-index: 9; }
+#canvas { width: @siteWidth; margin: 0 auto; position: relative; z-index: 10; }
 
 
-#wrapper { position: relative; padding: @pagePaddingTB (@pagePaddingLR + 12); z-index: 11; }
+#wrapper { position: relative; padding: @pagePaddingTB (@pagePaddingLR + 12); }
 
 #page { position: relative; }
   .page-title, .page-description { display: none; }
