@@ -25,10 +25,10 @@
   {.or}
     <div id="bannerImage" class="default-background"><div class="banner-overlay"></div></div>
   {.end}
-
+<squarespace:navigation navigationId="mainNav" template="navigation" />
   <header id="header" data-content-field="main-image">
 
-    <squarespace:navigation navigationId="mainNav" template="navigation" />
+
 
     <div id="logo" data-content-field="site-title">
       <div class="wrapper">
