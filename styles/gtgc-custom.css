@@ -1,18 +1,3 @@
-/** FIX ANNOUNCEMENT (TEMP) **/
-
-.sqs-announcement-bar-close{
-	display:none;
-}
-.logo-image .logo img {
-    margin-top: -50px;
-}
-#bannerImage {
-    margin-top: 92px!important;
-}
-#canvas{
-  margin-top: 30px;
-}
-
 /** Logo Fix *
 .logo-image .logo img {
     margin-top: -122px;
